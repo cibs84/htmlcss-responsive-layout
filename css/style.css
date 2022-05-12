@@ -146,6 +146,30 @@ header .container nav.flex-container ul.flex-container li {
     border: 1px solid red;       
 }
 
+/* SECTION - Benefits */
+#benefits {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #9792e4;
+}
+
+#benefits .container .columns.flex-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* TEST */
+    border: 1px solid red;
+}
+
+#benefits .container .columns.flex-container .col {
+    width: 100%;
+    padding-bottom: 2rem;
+    color: black;
+    background-color: white;
+
+    /* TEST */
+    border: 1px solid red;       
+}
 
 /* FOOTER */
 
@@ -161,6 +185,8 @@ header .container nav.flex-container ul.flex-container li {
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+
+    /* SECTION - Features */
     #features .container .columns.flex-container {
         justify-content: space-between;    
         /* margin-left: -1.4rem;
@@ -181,6 +207,11 @@ header .container nav.flex-container ul.flex-container li {
     #features .container .columns.flex-container .col:first-child {
         width: calc((100% / 3) * 2 - 0.7rem);
     }
+
+    /* SECTION - Benefits */
+    #benefits .container .columns.flex-container .col {
+        width: calc(50% - 1.4rem);
+    }    
 }
 
 /* DESKTOP */
@@ -211,5 +242,10 @@ header .container nav.flex-container ul.flex-container li {
     #assets .container .columns.flex-container .col {
         width: calc(50% - 2rem);
     }
+    
+    /* SECTION - Benefits */
+    #benefits .container .columns.flex-container .col {
+        width: calc((100% / 3) - 1.4rem);
+    }    
     
 }
