@@ -1,0 +1,43 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* COMMON */
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* HEADER */
+
+
+/* MAIN */
+
+
+/* FOOTER */
+
+
+/********************
+    MEDIA QUERIES
+********************/
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: lightcoral;
+    }
+}
