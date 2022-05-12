@@ -9,9 +9,64 @@
 body {
     font-family: 'PT Sans', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.flex-container {
+    display: flex;
+}
 
 /* HEADER */
+header {
+    background-color: #0084fd;
+}
 
+header .container {
+    height: 80px;
+}
+
+header .container nav.flex-container {
+    background-color: green;
+    height: 100%;    
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header .container nav.flex-container .logo {
+    background-color: orange;
+}
+
+header .container nav.flex-container .burger-menu {
+    background-color: orange;
+}
+
+header .container nav.flex-container ul.flex-container {
+    background-color: purple;
+    display: none;
+}
+
+header .container nav.flex-container ul.flex-container li {
+    margin-left: 2rem;
+    
+    /* TEST */
+    background-color: orange;
+}
 
 /* MAIN */
 
@@ -25,7 +80,7 @@ body {
 
 /* MOBILE */
 @media screen and (max-width: 767px) {
-    
+
 }
 
 /* TABLET */
@@ -37,6 +92,17 @@ body {
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
+
+    /* HEADER */
+    header .container nav.flex-container .burger-menu {
+        display: none;
+    }
+    header .container nav.flex-container ul.flex-container {
+        display: flex;
+    }
+    
+
+    /* TEST */
     body {
         background-color: lightcoral;
     }
