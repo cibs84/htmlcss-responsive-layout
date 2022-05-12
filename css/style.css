@@ -171,6 +171,31 @@ header .container nav.flex-container ul.flex-container li {
     border: 1px solid red;       
 }
 
+/* SECTION - About Us */
+#about-us {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+    background-color: white;
+}
+
+#about-us .container .columns.flex-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* TEST */
+    border: 1px solid red;
+}
+
+#about-us .container .columns.flex-container .col {
+    width: 100%;
+    padding-bottom: 2rem;
+    color: black;
+    background-color: white;
+
+    /* TEST */
+    border: 1px solid red;       
+}
+
 /* FOOTER */
 
 
@@ -211,7 +236,16 @@ header .container nav.flex-container ul.flex-container li {
     /* SECTION - Benefits */
     #benefits .container .columns.flex-container .col {
         width: calc(50% - 1.4rem);
-    }    
+    }
+    
+    /* SECTION - About Us */
+    #about-us .container .columns.flex-container .col.text {
+        width: calc((100% / 3) * 2 - 3rem);
+    }
+    #about-us .container .columns.flex-container .col.image-quote {
+        width: calc((100% / 3) - 3rem);
+    }
+    
 }
 
 /* DESKTOP */
@@ -248,4 +282,14 @@ header .container nav.flex-container ul.flex-container li {
         width: calc((100% / 3) - 1.4rem);
     }    
     
+    /* SECTION - About Us */
+    #about-us .container {
+        max-width: 1120px;
+    }
+    #about-us .container .columns.flex-container .col.text {
+        width: calc((100% / 3) * 2 - 3.5rem);
+    }
+    #about-us .container .columns.flex-container .col.image-quote {
+        width: calc((100% / 3) - 3.5rem);
+    }
 }
