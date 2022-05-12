@@ -210,6 +210,18 @@ header .container nav.flex-container ul.flex-container li {
 
 
 /* FOOTER */
+footer {
+    background-color: #333333;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+footer .container {
+    text-align: center;
+}
+footer .container > div {
+    color: white;
+}
+
 
 
 /********************
@@ -267,6 +279,12 @@ header .container nav.flex-container ul.flex-container li {
         /* TEST */
         border: 1px solid red;
     }
+
+    /* FOOTER */
+    footer .container {
+        width: 500px;
+    }
+    
 }
 
 /* DESKTOP */
