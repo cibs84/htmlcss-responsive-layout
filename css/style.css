@@ -196,6 +196,19 @@ header .container nav.flex-container ul.flex-container li {
     border: 1px solid red;       
 }
 
+/* SECTION - Get Started */
+#get-started {
+    background-color: #9792e4;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#get-started .container {
+    text-align: center;
+}
+#get-started .container .cta {
+}
+
+
 /* FOOTER */
 
 
@@ -245,7 +258,15 @@ header .container nav.flex-container ul.flex-container li {
     #about-us .container .columns.flex-container .col.image-quote {
         width: calc((100% / 3) - 3rem);
     }
-    
+
+    /* SECTION - Get Started */
+    #get-started .container {
+        width: 560px;
+        padding: 0;
+        
+        /* TEST */
+        border: 1px solid red;
+    }
 }
 
 /* DESKTOP */
