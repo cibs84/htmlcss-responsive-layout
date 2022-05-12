@@ -78,7 +78,7 @@ header .container nav.flex-container ul.flex-container li {
 
 #features .container .columns.flex-container {
     flex-wrap: wrap;
-
+    
     /* TEST */
     border: 1px solid red;
 }
@@ -86,10 +86,33 @@ header .container nav.flex-container ul.flex-container li {
 #features .container .columns.flex-container .col {
     width: 100%;
     padding-bottom: 1.4rem;
+    
+    /* TEST */
+    border: 1px solid red;
+}
+
+/* SECTION - Assets */
+#assets {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    background-color: #9792e4;
+}
+
+#assets .container .columns.flex-container {
+    flex-wrap: wrap;
+    
+    /* TEST */
+    border: 1px solid red;
+}
+
+#assets .container .columns.flex-container .col {
+    width: 100%;
+    padding-bottom: 2rem;
 
     /* TEST */
     border: 1px solid red;
 }
+
 
 /* FOOTER */
 
@@ -111,27 +134,19 @@ header .container nav.flex-container ul.flex-container li {
         margin-right: -1.4rem; */
                 
         /* TEST */
-        border: 1px solid red;
+        border: 1px solid blue;
     }
     
     #features .container .columns.flex-container .col {
         width: calc((100% / 3) - 1.4rem);
 
         /* TEST */
-        border: 1px solid red;
+        border: 1px solid blue;
+        background-color: #b5ddff;
     }
         
     #features .container .columns.flex-container .col:first-child {
         width: calc((100% / 3) * 2 - 0.7rem);
-    
-        /* TEST */
-        border: 1px solid red;
-    }
-        
-
-    /* TEST */
-    body {
-        background-color: lightblue;
     }
 }
 
@@ -144,11 +159,25 @@ header .container nav.flex-container ul.flex-container li {
     }
     header .container nav.flex-container ul.flex-container {
         display: flex;
+    }    
+    
+    /* SECTION - Assets */
+    #assets .container {
+        max-width: 950px;
     }
     
+    #assets .container .columns.flex-container {
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        
+        /* TEST */
+        border: 1px solid red;
+    } 
 
-    /* TEST */
-    body {
-        background-color: lightgreen;
+    #assets .container .columns.flex-container .col {
+        width: calc(50% - 2rem);
     }
+        
 }
+
