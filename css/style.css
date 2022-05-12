@@ -113,6 +113,39 @@ header .container nav.flex-container ul.flex-container li {
     border: 1px solid red;
 }
 
+/* SECTION - Testimonials */
+#testimonials {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#testimonials .container .columns.flex-container {
+    flex-wrap: wrap;
+    
+    /* TEST */
+    border: 1px solid red;
+}
+
+#testimonials .container .columns.flex-container .col {
+    background-color: #9792e4;
+    width: 100%;
+    padding-bottom: 2rem;
+    color: white;
+
+    /* TEST */
+    border: 1px solid red;       
+}
+
+#testimonials .container .columns.flex-container .col.description {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 2rem;
+    color: black;
+
+    /* TEST */
+    border: 1px solid red;       
+}
+
 
 /* FOOTER */
 
@@ -174,10 +207,9 @@ header .container nav.flex-container ul.flex-container li {
         /* TEST */
         border: 1px solid red;
     } 
-
+    
     #assets .container .columns.flex-container .col {
         width: calc(50% - 2rem);
     }
-        
+    
 }
-
