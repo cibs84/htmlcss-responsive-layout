@@ -208,12 +208,59 @@ header .container nav.flex-container ul.flex-container li {
 #testimonials .container .columns.flex-container .col.description {
     background-color: white;
     width: 100%;
-    padding-bottom: 2rem;
+    padding: 1rem 0 2.5rem;
     color: black;
-
-    /* TEST */
-    border: 1px solid red;       
+    text-align: center;
 }
+
+#testimonials .container .columns.flex-container .col.description h3 {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#testimonials .container .columns.flex-container .col.description h2 {
+    background-color: white;
+    padding-bottom: 2rem;
+    font-size: 2.1rem;
+    color: #9792e4;
+    line-height: 2.8rem;
+}
+
+#testimonials .container .columns.flex-container .col {
+    background-color: white;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#testimonials .container .columns.flex-container .col .card {
+    background-color: #9792e4;
+    text-align: center;
+    justify-content: center;
+}
+
+#testimonials .container .columns.flex-container .col .card cite {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+#testimonials .container .columns.flex-container .col .card .image-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+}
+
+#testimonials .container .columns.flex-container .col .card .image-box img {
+    height: 100%;
+    object-fit: cover;    
+}
+
 
 /* SECTION - Benefits */
 #benefits {
@@ -324,6 +371,21 @@ footer .container > div {
         width: calc(50% - 1.4rem);
     }
     
+    /* SECTION - Testimonials */
+    #testimonials .container .columns.flex-container .col .card {
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #testimonials .container .columns.flex-container .col .card .image-box {
+        margin: 0;
+    }
+
+    #testimonials .container .columns.flex-container .col .card .quote-box {
+        width: 75%;
+    }
+
     /* SECTION - About Us */
     #about-us .container .columns.flex-container .col.text {
         width: calc((100% / 3) * 2 - 3rem);
