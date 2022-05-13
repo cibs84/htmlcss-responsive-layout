@@ -12,12 +12,14 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 ul {
     list-style-type: none;
 }
 img {
     width: 100%;
+    display: block;
 }
 
 /* UTILITIES */
@@ -94,11 +96,56 @@ header .container nav.flex-container ul.flex-container li {
 #features .container .columns.flex-container .col {
     width: 100%;
     padding-bottom: 1.4rem;
-    background-color: #b5ddff;
     
     /* TEST */
     border: 1px solid blue;
 }
+
+#features .col .card.flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #b5ddff;
+    padding: 2rem;
+    border-radius: 25px;
+    
+    /* TEST */
+    border: 1px solid red;
+}
+
+#features .col .card.flex-container:first-child {
+    padding-bottom: 0;
+}
+
+#features .col .card.flex-container .text h2 {
+    color: #0084fd;
+    font-size: 1.5rem;
+}
+
+#features .col .card.flex-container .text p {
+    line-height: 1.7rem;
+    margin: 2rem 0;
+    font-weight: 600;
+    color: #5a6e7f;
+}
+
+#features .col .card.flex-container .text a {
+    font-weight: 600;
+    color: white;
+    background-color: #0084fd;
+    border-radius: 20px;
+    padding: 12px 40px;
+    letter-spacing: 0.25rem;
+}
+
+#features .col .card.flex-container .image {
+}
+
+#features .col .card.flex-container img {
+    width: 250px;
+    margin-top: 2rem;
+}
+
+
 
 /* SECTION - Assets */
 #assets {
@@ -247,7 +294,8 @@ footer .container > div {
 
     /* SECTION - Features */
     #features .container .columns.flex-container {
-        justify-content: space-between;    
+        justify-content: space-between;
+        align-items: flex-end;    
         /* margin-left: -1.4rem;
         margin-right: -1.4rem; */
                 
@@ -261,6 +309,10 @@ footer .container > div {
         
     #features .container .columns.flex-container .col:first-child {
         width: calc((100% / 3) * 2 - 0.7rem);
+    }
+
+    #features .col .card.flex-container {
+        justify-content: flex-start;
     }
 
     /* SECTION - Benefits */
@@ -311,6 +363,15 @@ footer .container > div {
         padding: 8px 12px;
     }    
     
+    /* SECTION - Features */
+    #features .col .card.flex-container > * {
+        width: 50%;
+    }
+    
+    #features .col .card.flex-container {
+        justify-content: space-between;
+    }
+
     /* SECTION - Assets */
     #assets .container {
         max-width: 950px;
