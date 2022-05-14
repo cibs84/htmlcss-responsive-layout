@@ -386,10 +386,6 @@ header .container nav.flex-container ul.flex-container li {
     line-height: 3.5rem;
 }
 
-#about-us .col.image-quote .card .quote h3 {
-       
-}
-
 #about-us .col.image-quote .card .quote p {
     margin: 0.5rem 0;
     font-size: 1.7rem;
@@ -413,13 +409,50 @@ header .container nav.flex-container ul.flex-container li {
 /* SECTION - Get Started */
 #get-started {
     background-color: #9792e4;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 4rem 0;
 }
 #get-started .container {
     text-align: center;
 }
 #get-started .container .cta {
+    
+}
+#get-started .container .cta h3 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #d5d4f4;
+    margin-bottom: 1.2rem;
+}
+#get-started .container .cta h2 {
+    color: white;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+}
+#get-started .container .cta div:first-of-type {
+    color: #fdc15f;
+    font-size: 3.6rem;
+    font-weight: 800;
+    margin: 3rem 0;
+}
+#get-started .container .cta p {
+    color: white;
+}
+#get-started .container .cta a.btn {
+    font-weight: 600;
+    color: #9792e4;
+    letter-spacing: 0.25rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 16px 68px;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+#get-started .container .cta div:last-of-type {
+    font-size: 0.9rem;
+    color: white;
+}
+#get-started .container .cta div:last-of-type a {
+    text-decoration: underline;
 }
 
 
@@ -428,12 +461,24 @@ footer {
     background-color: #333333;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
 }
 footer .container {
     text-align: center;
 }
 footer .container > div {
     color: white;
+}
+footer .container div:first-child {
+    margin-bottom: 4rem;
+}
+footer .container div:last-child a {
+    text-decoration: underline;
+    color: #9792e4;
+}
+footer .container div:last-child a:last-child {
+    display: block;
 }
 
 
@@ -525,22 +570,49 @@ footer .container > div {
         width: 80%;
     }
 
-
-
     /* SECTION - Get Started */
     #get-started .container {
         width: 560px;
         padding: 0;
-        
-        /* TEST */
-        border: 1px solid red;
     }
-
-    /* FOOTER */
-    footer .container {
-        width: 500px;
+    #get-started .container .cta h3 {
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: #d5d4f4;
+        margin-bottom: 1.2rem;
+    }
+    #get-started .container .cta h2 {
+        font-size: 3rem;
+    }
+    #get-started .container .cta div:first-of-type {
+        margin: 5rem 0;
+        font-size: 5.5rem;
+    }
+    #get-started .container .cta p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        padding: 0 2.5rem;
+    }
+    #get-started .container .cta a.btn {
+        border-radius: 5rem;
+        padding: 27px 83px;
+        font-size: 1.3rem;
+    }
+    #get-started .container .cta div:last-of-type {
+        font-size: 1rem;
+    }
+    #get-started .container .cta div:last-of-type a {
+        text-decoration: underline;
     }
     
+    /* FOOTER */
+    footer {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    footer .container {
+        width: 500px;
+    } 
 }
 
 /* DESKTOP */
