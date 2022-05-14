@@ -190,9 +190,6 @@ header .container nav.flex-container ul.flex-container li {
 
 #testimonials .container .columns.flex-container {
     flex-wrap: wrap;
-    
-    /* TEST */
-    border: 1px solid red;
 }
 
 #testimonials .container .columns.flex-container .col {
@@ -200,9 +197,6 @@ header .container nav.flex-container ul.flex-container li {
     width: 100%;
     padding-bottom: 2rem;
     color: white;
-
-    /* TEST */
-    border: 1px solid red;       
 }
 
 #testimonials .container .columns.flex-container .col.description {
@@ -239,6 +233,7 @@ header .container nav.flex-container ul.flex-container li {
     background-color: #9792e4;
     text-align: center;
     justify-content: center;
+    border-radius: 50px;
 }
 
 #testimonials .container .columns.flex-container .col .card cite {
@@ -246,6 +241,7 @@ header .container nav.flex-container ul.flex-container li {
     font-style: normal;
     font-size: 1.4rem;
     margin-top: 1.5rem;
+    display: block;
 }
 
 #testimonials .container .columns.flex-container .col .card .image-box {
@@ -267,26 +263,59 @@ header .container nav.flex-container ul.flex-container li {
     padding-top: 3rem;
     padding-bottom: 2rem;
     background-color: #9792e4;
+}    
+
+#benefits .container h2 {
+    color: white;
+    font-size: 2.7rem;
+    margin: 2rem 0 5rem;
+    text-align: center;
+    line-height: 3.3rem;
 }
 
 #benefits .container .columns.flex-container {
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    /* TEST */
-    border: 1px solid red;
-}
+}    
 
 #benefits .container .columns.flex-container .col {
-    width: 100%;
     padding-bottom: 2rem;
-    color: black;
-    background-color: white;
+}    
 
-    /* TEST */
-    border: 1px solid red;       
+#benefits .col .card {
+    background-color: white;
+    align-items: center;
+}        
+
+#benefits .col .card .number {
+    width: 100%;
+    color: #9792e4;
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-top: 1rem;
+}    
+
+#benefits .col .card h3 {
+    color: #9792e4;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1.5rem;
 }
 
+#benefits .col .card p {
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: #5a6e7f;
+}
+
+#benefits .col .card a {
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.25rem;
+    background-color: #9792e4;
+    border-radius: 20px;
+    padding: 6px 43px;
+    margin-top: 1.5rem;
+}
 /* SECTION - About Us */
 #about-us {
     padding-top: 6rem;
@@ -383,7 +412,8 @@ footer .container > div {
     }
 
     #testimonials .container .columns.flex-container .col .card .quote-box {
-        width: 75%;
+        width: calc(100% - 200px);
+        padding-left: 2rem;
     }
 
     /* SECTION - About Us */
@@ -453,6 +483,11 @@ footer .container > div {
         width: 68%;
         margin: 0 auto;    
     }    
+    
+    /* SECTION - Testimonials */
+    #testimonials .container .columns.flex-container .col .card .quote-box {
+        padding-left: 3.5rem;
+    }
 
     /* SECTION - Benefits */
     #benefits .container .columns.flex-container .col {
