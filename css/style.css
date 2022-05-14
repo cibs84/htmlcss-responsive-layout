@@ -266,8 +266,8 @@ header .container nav.flex-container ul.flex-container li {
 }    
 
 #benefits .container h2 {
+    font-size: 2.3rem;
     color: white;
-    font-size: 2.7rem;
     margin: 2rem 0 5rem;
     text-align: center;
     line-height: 3.3rem;
@@ -290,7 +290,7 @@ header .container nav.flex-container ul.flex-container li {
 #benefits .col .card .number {
     width: 100%;
     color: #9792e4;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-weight: 800;
     margin-top: 1rem;
 }    
@@ -396,10 +396,19 @@ footer .container > div {
     }
 
     /* SECTION - Benefits */
+    #benefits .container h2 {
+        font-size: 2.8rem;
+    }    
+
     #benefits .container .columns.flex-container .col {
         width: calc(50% - 1.4rem);
     }
     
+    #benefits .col .card .number {
+        font-size: 4.5rem;
+        margin-top: 2rem;
+    }
+
     /* SECTION - Testimonials */
     #testimonials .container .columns.flex-container .col .card {
         text-align: left;
@@ -490,6 +499,10 @@ footer .container > div {
     }
 
     /* SECTION - Benefits */
+    #benefits .container h2 {
+        font-size: 3.2rem;
+    }
+
     #benefits .container .columns.flex-container .col {
         width: calc((100% / 3) - 1.4rem);
     }    
