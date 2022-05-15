@@ -97,6 +97,7 @@ header .container nav.flex-container ul.flex-container li {
     text-align: center;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
 }    
 
 #features .col .card .icon {
@@ -128,7 +129,7 @@ header .container nav.flex-container ul.flex-container li {
 }
 
 #features .col .card.flex-container img {
-    width: 250px;
+    width: 100%;
     margin-top: 2rem;
 }
 
@@ -638,7 +639,11 @@ footer .container div:last-child a:last-child {
     #features .col:first-child .card.flex-container > * {
         width: 50%;
     }
-    
+    #features .col .card {
+        
+        align-content: center;
+    }
+
     /* SECTION - Assets */
     #assets .container {
         max-width: 950px;
