@@ -512,6 +512,7 @@ footer .container div:last-child a:last-child {
 
     #features .col:first-child .card.flex-container {
         justify-content: flex-start;
+        padding-right: 2rem;
     }
 
     #features .col .card.flex-container img {
@@ -648,12 +649,15 @@ footer .container div:last-child a:last-child {
     #features .col:first-child .card.flex-container > * {
         width: 50%;
     }
-    #features .col .card {
-        
+    #features .col .card {        
         align-content: center;
     }
     #features .col .card.flex-container img {
         margin-top: 5rem;
+    }
+
+    #features .col:first-child .card.flex-container {
+        padding-right: 0.3rem;
     }
 
     /* SECTION - Assets */
